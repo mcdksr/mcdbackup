@@ -10,6 +10,9 @@ web.createServer(function(req,res){
 }).listen(5500);
 
 //2st attemp ready
+
+
+
 client.on('ready', () => {
   setInterval(() => backup(), 1000 * 60 * 60 * 12); 
 }); 
